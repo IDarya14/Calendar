@@ -1,0 +1,76 @@
+.calendar {
+  &__wrapper {
+    padding: 30px;
+    background-color: rgb(238, 238, 238);
+    margin: 50px auto;
+    width: 600px;
+    .header {
+      margin-bottom: 20px;
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      &__month {
+        font-size: 20px;
+      }
+      &__year {
+        font-size: 20px;
+      }
+      &__btnnext {
+        cursor: pointer;
+        justify-self: center;
+        img {
+          width: 30px;
+          height: 30px;
+          opacity: 0.6;
+        }
+      }
+      &__btnback {
+        cursor: pointer;
+        justify-self: center;
+        img {
+          width: 30px;
+          height: 30px;
+          opacity: 0.6;
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+    .body {
+      padding-bottom: 20px;
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      &__date {
+        justify-self: center;
+      }
+    }
+    .wrap {
+      margin-bottom: 10px;
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      .item {
+        display: flex;
+        justify-content: flex-end;
+        height: 45px;
+        padding: 5px;
+        border: 1px solid black;
+      }
+      .item-additional {
+        color: rgb(167, 167, 167);
+      }
+      .today {
+        background-color: rgb(107, 107, 107);
+      }
+    }
+    .now {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      &__item {
+        cursor: pointer;
+        justify-self: center;
+      }
+      &__item:hover {
+        color: blue;
+      }
+    }
+  }
+}
