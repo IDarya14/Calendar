@@ -119,6 +119,7 @@ export const Calendar = () => {
         result = elem.notes;
         return elem.notes;
       }
+      return result[0];
     });
 
     return result[0];
