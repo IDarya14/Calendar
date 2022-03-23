@@ -62,8 +62,11 @@
           font-size: 10px;
         }
       }
+      .item:hover {
+        background-color: rgb(224, 217, 217);
+      }
       .item-additional {
-        color: rgb(167, 167, 167);
+        color: rgb(85, 68, 68);
       }
       .today {
         background-color: rgb(197, 194, 194);
