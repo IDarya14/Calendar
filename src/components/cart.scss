@@ -1,0 +1,70 @@
+.cart-wrapper {
+  .cart {
+    position: absolute;
+    top: 33%;
+    left: 38%;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    width: 400px;
+
+    &__date {
+      margin: 5px auto;
+      width: 90px;
+    }
+
+    .input {
+      margin: 10px auto 20px auto;
+      width: 350px;
+      &__text {
+        margin: 0 auto 5px auto;
+      }
+      &__items {
+        width: 350px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+      }
+      &__btn {
+        border: 1px solid black;
+        padding: 5px;
+        background-color: rgb(202, 202, 202);
+        border: 1px solid rgb(112, 112, 112);
+        border-radius: 6px;
+      }
+      input {
+        width: 260px;
+      }
+    }
+
+    &__list {
+      display: flex;
+    }
+    &__closewrapper {
+      margin: 10px;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__close {
+      color: red;
+      font-size: 20px;
+      margin-top: -10px;
+      margin-right: -3px;
+    }
+  }
+  .list {
+    li {
+      list-style: none;
+    }
+    &__wrapper {
+      display: flex;
+      align-items: center;
+    }
+    &__delete {
+    }
+    &__elem {
+      margin-left: 10px;
+    }
+  }
+}

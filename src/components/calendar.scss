@@ -44,6 +44,7 @@
       }
     }
     .wrap {
+      cursor: pointer;
       margin-bottom: 10px;
       display: grid;
       grid-template-columns: repeat(7, 1fr);
@@ -53,12 +54,19 @@
         height: 45px;
         padding: 5px;
         border: 1px solid black;
+
+        &__notes {
+          width: 60px;
+          height: 47px;
+          overflow: hidden;
+          font-size: 10px;
+        }
       }
       .item-additional {
         color: rgb(167, 167, 167);
       }
       .today {
-        background-color: rgb(107, 107, 107);
+        background-color: rgb(197, 194, 194);
       }
     }
     .now {
